@@ -21,6 +21,6 @@
     "workers:disable": "npm run workers:deploy",
     "build": "postcss ./src/styles.css -o ./public/_dist/styles.css",
     "watch": "onchange 'tailwind.config.js' './public/**/*.html' './src/**/*.css' -- npm run build",
-    "production": "NODE_ENV=production postcss ./src/styles.css -o ./public/_dist/styles.css"
+    "production": "set NODE_ENV=production && postcss ./src/styles.css -o ./public/_dist/styles.css"
   }
 }
